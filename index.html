@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+
+</head>
+
+<style>
+    /* Personaliza el estilo del slider */
+    .carousel-inner {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .carousel-inner .carousel-item {
+        flex: 0 0 25%;
+        /* Ajusta el ancho de las tarjetas (4 tarjetas en total) */
+    }
+
+    .card-img-top{
+        height: 250px;
+    }
+</style>
+
+
+<body>
+    <header class="" style="height: 100vh; background: #ffffff url(background.jpg) center center/cover no-repeat;display: flex;
+    flex-direction: column;
+    justify-content: space-between;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark  ">
+            <div class="container">
+
+                <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavId">
+                    <ul class="navbar-nav mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">About us <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galery</a>
+                        </li>
+
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <h1><strong>True Trip</strong></h1>
+                    </a>
+                    <a class="navbar-brand" href="#">Go Try</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="container d-flex justify-content-center align-items-center" id="Main" style="flex: 1;">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-6 text-white text-center">
+                    <div class="my-auto">
+                        <h1 class="" style="font-size: 3.2em;"><strong>Organiza el viaje de tus sueños con uno de
+                                nuestros
+                                fabulosos planes</strong></h1>
+
+                        <a name="" id="" class="btn btn-primary my-2" style="font-size: 1.5em;" href="#"
+                            role="button">Comienza Aquí <i class="bi bi-backpack2"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="row my-auto justify-content-center">
+                        <div class="col-sm-10 card text-start my-3">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Rápido <i class="bi bi-check-circle"></i> </strong></h4>
+                                <p class="card-text">Si buscas una aventura llena de emoción en poco tiempo, un
+                                    viaje
+                                    rápido es la opción ideal. Aprovecha al máximo cada minuto y descubre destinos
+                                    sorprendentes en una escapada inolvidable</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 card text-start my-3">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Seguro <i class="bi bi-check-circle"></i></strong></h4>
+                                <p class="card-text">Prioriza tu seguridad en todo momento durante tu viaje. Con
+                                    medidas
+                                    de precaución y resguardo, garantiza una experiencia sin preocupaciones y
+                                    disfruta
+                                    al máximo de tu travesía con total confianza</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 card text-start my-3">
+                            <div class="card-body">
+                                <h4 class="card-title"><strong>Organiza tu viaje <i
+                                            class="bi bi-check-circle"></i></strong></h4>
+                                <p class="card-text">Organiza tu viaje a la perfección, desde el itinerario hasta
+                                    los
+                                    detalles más pequeños, para asegurarte de que todo salga como lo planeaste
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+        <div class="vh-100 d-flex justify-content-center align-items-center"
+            style="background: #ffffff url(background2.jpg) center center/cover no-repeat;">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="card ">
+                        <div class="card-body">
+                            <h1 class="card-title text-center"><strong>Planea tu viaje</strong></h1>
+                            <form class="form-row row">
+                                <div class="col-sm-3 my-2">
+                                    <select class="form-control" id="origen">
+                                        <option value="" disabled selected>Seleccionar Origen</option>
+                                        <option value="pais1">País 1</option>
+                                        <option value="pais2">País 2</option>
+                                        <option value="pais3">País 3</option>
+                                        <!-- Agregar más opciones según tus necesidades -->
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 my-2">
+                                    <select class="form-control" id="destino">
+                                        <option value="" disabled selected>Seleccionar Destino</option>
+                                        <option value="pais1">País 1</option>
+                                        <option value="pais2">País 2</option>
+                                        <option value="pais3">País 3</option>
+                                        <!-- Agregar más opciones según tus necesidades -->
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 my-2">
+                                    <input type="text" class="form-control" id="Inicio"
+                                        placeholder="Indicar Fecha de Inicio">
+                                </div>
+                                <div class="col-sm-3 my-2">
+                                    <input type="text" class="form-control" id="Fin"
+                                        placeholder="Indicar Fecha de Retorno">
+                                </div>
+                                <div class="col-sm-12 my-2 text-center">
+                                    <button type="submit" class="btn btn-success text-center">Quiero ir a mi viaje YA <i
+                                            class="bi bi-airplane-fill"></i></button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h1 class="text-center my-4"><strong>Te llevamos a las Maravillas del mundo</strong></h1>
+            <div class="row justify-content-center align-items-center g-2 responsive ">
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla1.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">Macchu Picchu</h4>
+                     
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center ">
+                      <img class="card-img-top" src="img/lugares/Maravilla2.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">Chichén Itzá</h4>
+                   
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla3.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">La gran Muralla China</h4>
+                       
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla4.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">Petra</h4>
+                  
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla5.webp" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">El Coliseo</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla6.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">Taj Mahal</h4>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-1">
+                    <div class="card text-center">
+                      <img class="card-img-top" src="img/lugares/Maravilla7.webp" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">El Cristo Redentor</h4>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-sm-6 text-center">
+                    <img src="img/hombre-guapo-que-hace-muestra-aceptable.jpg" height="500px">
+                </div>
+                <div class="col-sm-6">
+                    <h1><strong>TrueTrip: Su Socio en Viajes</strong></h1>
+                    <p>En TrueTrip, sabemos que cada viaje es una aventura única. Nuestro compromiso es hacer que cada experiencia de viaje sea memorable y sin complicaciones.</p>
+                    <p>Con años de experiencia en la industria de los viajes y un enfoque inquebrantable en la satisfacción del cliente, somos su socio de confianza para explorar el mundo. Desde reservas sin problemas hasta recomendaciones locales auténticas, en TrueTrip nos enorgullece ser su guía en cada paso de su viaje.</p>
+                    <p><strong>Descubra el mundo con confianza, descubra TrueTrip.</strong></p>
+                </div>
+        
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-4 my-3">
+                    Contacto: contacto@truetrip.com
+                </div>
+                <div class="col-sm-4 my-3">
+                    <h1><strong>TRUE TRIP</strong></h1>
+                </div>
+                <div class="col-sm-4 my-3">
+                    En honor a Carlos Andre Alcantara
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>
